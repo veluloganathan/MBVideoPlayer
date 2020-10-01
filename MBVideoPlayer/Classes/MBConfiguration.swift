@@ -38,4 +38,20 @@ public struct MainConfiguration: MBConfiguration {
     public var isShowOverlay: Bool = true
     public var dimension: PlayerDimension = .embed
     public var seekDuration: Float64 = 15.0
+    
+    
+    public init(canShowVideoList: Bool = true, canShowTime: Bool = true, canShowPlayPause: Bool = true, canShowTimeBar: Bool = true, canShowFullScreenBtn: Bool = true, canShowForwardBack: Bool = true, canShowHeader: Bool = true, canShowHeaderTitle: Bool = true, canShowHeaderOption: Bool = true, isShowOverlay: Bool = true, dimension: PlayerDimension = .embed, seekDuration: Float64 = 15.0) {
+        self.canShowVideoList = canShowVideoList
+        self.canShowTime = canShowTime
+        self.canShowPlayPause = canShowPlayPause
+        self.canShowTimeBar = canShowTimeBar
+        self.canShowFullScreenBtn = canShowFullScreenBtn
+        self.canShowForwardBack = canShowForwardBack
+        self.canShowHeader = canShowHeader
+        self.canShowHeaderTitle = canShowHeaderTitle
+        self.canShowHeaderOption = canShowHeaderOption
+        self.isShowOverlay = isShowOverlay
+        self.dimension = dimension
+        self.seekDuration = seekDuration
+    }
 }
